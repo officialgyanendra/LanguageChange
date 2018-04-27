@@ -1,0 +1,13 @@
+package com.spring.mvc;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+@Controller
+public class HomeController {
+	@RequestMapping("/home")
+public String showHome(){
+		System.out.println("HomeController-> showHome");
+		return "home";
+}
+}
